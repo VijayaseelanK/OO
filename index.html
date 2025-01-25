@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - SISR</title>
+  <style>
+    /* Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Container */
+    .container {
+      display: flex;
+      height: 100vh; /* Prend toute la hauteur de la fenêtre */
+      width: 100vw;  /* Prend toute la largeur de la fenêtre */
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 300px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .sidebar p {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #bdc3c7;
+    }
+
+    .nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav li {
+      margin: 15px 0;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #ecf0f1;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #ff00d4;
+    }
+
+    .nav .emoji {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #bdc3c7;
+    }
+
+    /* Video Section */
+    .video-section {
+      flex: 1; /* La vidéo occupe tout l'espace restant */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-section video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* La vidéo remplit le conteneur */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank" class="social-btn" title="LinkedIn">🔗</a>
+      </div>
+      <h2>Kanikathir VIJAYASEELAN</h2>
+      <p>Étudiant en BTS SIO - Option SISR</p>
+      <ul class="nav">
+        <li><a href="https://vijayaseelank.github.io/test-gitt/"><span class="emoji">🏠</span> Accueil</a></li>
+        <li><a href="profil.html"><span class="emoji">👤</span> Profil</a></li>
+        <li><a href="parcours.html"><span class="emoji">📜</span> Parcours</a></li>
+        <li><a href="#"><span class="emoji">💼</span> Stages</a></li>
+        <li><a href="#"><span class="emoji">💡</span> Compétences</a></li>
+        <li><a href="#"><span class="emoji">📁</span> Projets</a></li>
+        <li><a href="bts-sio.html"><span class="emoji">🎓</span> BTS SIO</a></li>
+        <li><a href="#"><span class="emoji">📖</span> Épreuves</a></li>
+        <li><a href="#"><span class="emoji">✉️</span> Contact</a></li>
+      </ul>
+      <footer>
+        <p>&copy; 2025 Designed by Kanikathir Vijayaseelan</p>
+      </footer>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+      <video autoplay muted loop>
+        <source src="file (1).mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
+

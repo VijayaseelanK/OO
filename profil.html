@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Moi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            background: rgba(30, 41, 59, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 25px rgba(0, 238, 255, 0.2);
+            transition: transform 0.4s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            text-align: center;
+            color: #0ea5e9;
+            position: relative;
+        }
+
+        .section-title p {
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        .content {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 5px solid #0ea5e9;
+            border-radius: 10px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .content:hover {
+            box-shadow: 0 0 15px rgba(14, 165, 233, 0.5);
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #0ea5e9;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #e2e8f0;
+        }
+
+        ul li i {
+            color: #0ea5e9;
+            margin-right: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 2px solid #0ea5e9;
+            color: #0ea5e9;
+            background: transparent;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            color: #0f172a;
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.8);
+        }
+
+        .btn i {
+            margin-right: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .section-title p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>À PROPOS DE MOI 💭</h2>
+            <p>
+                Étudiant au Lycée <b>Parc de Vilgénis</b> à Massy (91) en <b>BTS SIO</b>, spécialité <b>SISR</b>. Passionné par les nouvelles technologies, j’ai obtenu mon <b>BAC PRO SN SSIHT</b> - Mention Bien en 2024.
+            </p>
+        </div>
+
+        <div class="content">
+            <h3>- Étudiant en BTS SIO (2024 - 2026) 🤵</h3>
+            <ul>
+                <li><i class="fa fa-school"></i> <strong>École :</strong> Lycée Léonard de Vinci</li>
+                <li><i class="fa fa-graduation-cap"></i> <strong>Diplôme :</strong> Bac Pro SN SSIHT - Mention Bien</li>
+                <li><i class="fa fa-phone"></i> <strong>Téléphone :</strong> <a href="tel:0766664838" style="color: #0ea5e9;">07 66 66 48 38</a></li>
+                <li><i class="fa fa-envelope"></i> <strong>Email :</strong> <a href="mailto:kanikathir.pro@gmail.com" style="color: #0ea5e9;">kanikathir.pro@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h3>- Projet professionnel 🏢</h3>
+            <p>
+                Je souhaite poursuivre mes études en alternance après mon <b>BTS SIO</b> pour acquérir de l’expérience professionnelle et mettre en pratique mes compétences en cybersécurité et gestion des infrastructures.
+            </p>
+            <ul>
+                <li><i class="fa fa-check"></i> Développement de projets IT innovants</li>
+                <li><i class="fa fa-check"></i> Mise en place et maintenance de réseaux</li>
+                <li><i class="fa fa-check"></i> Sécurisation des infrastructures</li>
+            </ul>
+        </div>
+
+        <div class="button-container">
+            <a href="#" class="btn" onclick="viewCV()">
+                <i class="fa fa-eye"></i> Voir mon CV
+            </a>
+            <a href="#" class="btn" onclick="downloadCV()">
+                <i class="fa fa-download"></i> Télécharger CV
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function viewCV() {
+            alert("Ouverture du CV...");
+            window.open('cv.pdf', '_blank');
+        }
+
+        function downloadCV() {
+            alert("Téléchargement en cours...");
+            let link = document.createElement('a');
+            link.href = 'cv.pdf';
+            link.download = 'Mon_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+  

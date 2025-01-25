@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e3edf7, #c0d2e8);
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        h1 {
+            color: #0a3d62;
+            font-size: 2.5rem;
+            border-bottom: 3px solid #0a3d62;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h1 i {
+            margin-right: 10px;
+        }
+
+        p.subtitle {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .timeline-column {
+            width: 48%;
+        }
+
+        .timeline-title {
+            font-size: 1.8rem;
+            color: #0a3d62;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #0a3d62;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 5px #0a3d62;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 20px;
+            width: 2px;
+            height: 100%;
+            background: #0a3d62;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: #fff;
+            background: #0a3d62;
+            padding: 3px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.4rem;
+            color: #0a3d62;
+            margin: 0;
+        }
+
+        .timeline-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .btn-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0a3d62;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .btn-up:hover {
+            background: #055b8c;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa fa-graduation-cap"></i> Parcours</h1>
+        <p class="subtitle">Mon cursus scolaire, mes différentes formations et mon parcours professionnel.</p>
+
+        <div class="timeline">
+            <div class="timeline-column">
+                <h2 class="timeline-title">Cursus scolaire 🏫</h2>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2024 - A ce jour</span>
+                    <h3>BTS SIO - OPTION SISR</h3>
+                    <p>Lycée Parc De Vilgénis (91 - MASSY-PALAISEAU)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2022 - 2024</span>
+                    <h3>LYCÉE</h3>
+                    <p>BAC PRO SN SSIHT- OPTION SSIHT <br> Mention Bien</p>
+                    <p>Lycée LEONARD DE VINCI (92- BAGNEUX)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2018 - 2021</span>
+                    <h3>COLLÈGE</h3>
+                    <p>COLLÈGE DES PETITS PONTS (92 - CLAMART)</p>
+                </div>
+            </div>
+
+            <div class="timeline-column">
+                <h2 class="timeline-title">Centre d'intérêt 🏃</h2>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2015 - maintenant</span>
+                    <h3>Football</h3>
+                    <p>La pratique de sport collectif, outre l’aspect physique, me permet d’avoir d’esprit d’équipe.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>VOYAGE</h3>
+                    <p>La découverte de nouvelles cultures et modes de vie apporte une ouverture sur le monde.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">Tous les jours</span>
+                    <h3>MUSIQUE</h3>
+                    <p>J’écoute de la musique quotidiennement.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2017 - maintenant</span>
+                    <h3>REGARDER DES FILMS ET SÉRIES EN VO</h3>
+                    <p>Associer un divertissement à un apprentissage pour améliorer mes compétences linguistiques.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
